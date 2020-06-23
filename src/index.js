@@ -1,5 +1,3 @@
-var numbers = [3, 56, 2, 48, 5];
-
 //Map -Create a new array by doing something with each item in an array.
 
 //Filter - Create a new array by keeping the items that return true.
@@ -9,3 +7,12 @@ var numbers = [3, 56, 2, 48, 5];
 //Find - find the first item that matches from an array.
 
 //FindIndex - find the index of the first item that matches.
+
+/* all this are the functions on Arrays in JS very good to know */
+import emojipedia from "./emojipedia.js";
+
+const result = emojipedia.map(function(emoji) {
+  return emoji.meaning.substring(0, 99);
+});
+
+console.log(result);
